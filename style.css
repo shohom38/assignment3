@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+body {
+    background: linear-gradient(#d9d9d9, #ffffff) no-repeat;
+}
+
+.wrap {
+    width: 1152px;
+    margin: 0 auto;
+}
+
+.header_wrap {
+    width: 100%;
+    min-height: 46px;
+    line-height: 46px;
+    background: linear-gradient(#264e8c, #24457a, #213a63);
+    margin-bottom: 19px;
+}
+
+
+.leftside_wrap, .leftside_wrap h1, .leftside_wrap h3 {
+    display: inline-block;
+
+}
+
+.leftside_wrap {
+    padding-left: 46px;
+}
+
+.leftside_wrap h1 {
+    font-size: 16px;
+    color: #ffffff;
+    padding-right: 12px;
+}
+
+.leftside_wrap h3 {
+    font-size: 12px;
+    color: #b9c4d6;
+}
+
+.rightside_wrap, .rightside_wrap p, .nav_after {
+    display: inline-block;
+}
+
+.rightside_wrap {
+    width: 520px;
+    z-index: 1;
+    background: linear-gradient(#3a6ea0, #336696, #295885);
+    position: relative;
+    top: -1px;
+    right: -196px;
+    text-align: right;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 12px;
+}
+
+.rightside_wrap p {
+    color: #b9c4d6;
+    padding-right: 26px;
+}
+
+.rightside_wrap p span {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav_after {
+    list-style: none;
+    text-align: center;
+}
+
+.nav_after>li{
+    display: inline-block;
+
+}
+
+.nav_after>li>a {
+    color: #b9c4d6;
+    text-decoration: none;
+}
+
+.nav_after li::after {
+    display: inline-block;
+    content: "|";
+    padding-left: 12px;
+    color: #7195b6;
+}
+
+
+.nav_after li:last-child::after {
+    content: "";
+}
+
+aside {
+    display: inline-block;
+    width: 211px;
+}
+
+.sidebar_wrap {
+    display: inline-block;
+}
+
+h2 {
+    font-size: 16px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 28px;
+}
+
+.constents_box {
+    width: 912px;
+    min-height: 665px;
+    padding: 22px 9px;
+    background: #ededed no-repeat;
+}
+
+.box_container {
+    display: inline-block;
+}
+
+.contents_box_tap {
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0 20px 0 0;
+    border-top: 1px double #cdcdcd;
+    border-left: 1px double #cdcdcd;
+    border-right: 1px double #cdcdcd;
+    background: #ffffff no-repeat;
+    z-index: 1;
+}
+
+.contents_container {
+    background: #ffffff no-repeat;
+    border: 1px solid #cdcdcd;
+    padding-top: 38px;
+    padding-left: 12px;
+    z-index: -1;
+}
+
+table {
+    border-collapse : collapse
+}
+
+tr, th, td {
+    border: 1px solid #000000;
+}
+
+.list_container {
+    padding: 13px;
+}
+
+.list_container ul {
+    list-style: square;
+    list-style-position: inside;
+}
