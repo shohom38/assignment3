@@ -332,3 +332,56 @@ th {
 .list_container ul li span {
     font-weight: 600;
 }
+
+.width_fixed1 {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.width_fixed2 {
+    padding-left: 169px;
+    padding-right: 169px;
+}
+
+.width_fixed3 {
+    width: 95px;
+}
+
+.td_txtarea {
+    resize: none;
+}
+
+.td_txtarea:focus {
+    outline: none;
+}
+
+.position_right_bottom {
+    font-size: 11px;
+    position: relative;
+    bottom: 0;
+    right: -280px;
+}
+
+.btn_position {
+    display: inline-block;
+    width: 737px;
+    text-align: right;
+}
+
+.save_btn {
+    font-size: 12px;
+    padding-right: 11px;
+    padding-left: 11px;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #2e5d9c;
+    box-shadow: 1px 1px 1px #c0c5cd;
+}
+
+.table3-1, .table3-2 {
+    margin-bottom: 17px;
+}
+
+.table3-3, .table3-4 {
+    margin-bottom: 40px;
+}
