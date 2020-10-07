@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>NRFOK</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header_wrap">
+            <header class="head_wrap">
+                <div class="leftside_wrap">
+                    <h1>개인연구관리</h1>
+                    <h3>NATIONAL RESEARCH FOUNDATION OF KOREA</h3>
+                </div>
+                <nav class="rightside_wrap">
+                    <p><span>flawless 님</span>이 로그인 하셨습니다.</p>
+                    <ul class="nav_after">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">NRF HOME</a></li>
+                    </ul>
+                    <button type="button" class="logout_button">로그아웃</button>
+                </nav>
+            </header>
+        </div>
+        <div class="aside_contents_wrap">
+            <aside>
+                <div class="sidebar_wrap">
+                    <ul class="sidebar_list sidebar_list1">
+                        <li><span><a href="#">연구지원과제 정보</a></span></li>
+                        <li><span><a href="#">개인연구관리</a></span></li>
+                    </ul>
+                    <ul class="sidebar_list sidebar_list2">
+                        <li><a href="#">변경신청내역보기</a></li>
+                        <li><a href="#">공동연구원변경</a></li>
+                        <li><a href="#" id="list_selected">연구기관변경</a></li>
+                        <li><a href="#">연구보조원변경</a></li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="box_container">
+                <div class="contents_head"><h2>개인연구관리</h2></div>
+                <div class="constents_box">
+                    <div class="contents_box_tap"><span><strong>연구기관변경</strong></span></div>
+                    <div class="contents_container">
+                        <div class="table3-1">
+                            <table>
+                                <tr>
+                                    <th class="th_blue">년도</th>
+                                    <th class="th_blue">사업명</th>
+                                    <th class="th_blue">사업차수</th>
+                                    <th class="th_blue">과제번호</th>
+                                    <th class="th_blue">과제명</th>
+                                </tr>
+                                <tr>
+                                    <td class="td_gray">2011</td>
+                                    <td class="td_gray left_align">한국사회기반연구사업(SSK)</td>
+                                    <td class="td_gray">1</td>
+                                    <td class="td_gray">B00037</td>
+                                    <td class="td_gray left_align">'작은'복지국가 비교연구를 통한 새로운 복지국가 이론 형성</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="table3-2">
+                            <div class="head_cell">변경신청내역</div>
+                            <div class="btn_position"><button class="save_btn">저장‣</button></div>
+                            <table>
+                                <tr>
+                                    <th class="th_blue_font th_blue_top">구분</th>
+                                    <th colspan="3" class="th_blue_font th_blue_top width_fixed1">변경전</th>
+                                    <th colspan="1" class="th_blue_font th_blue_top width_fixed2">변경후</th>
+                                </tr>
+                                <tr>
+                                    <td class="td_gray">연구기관</td>
+                                    <td colspan="3" class="td_gray left_align">연세대학교</td>
+                                    <td colspan="1" class="td_gray left_align"><input type="file"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="table3-3">
+                            <div class="head_cell">
+                                관련파일이 있는 경우 파일을 첨부시켜 주십시오.
+                            </div>
+                            <table>
+                                <tr>
+                                    <th class="th_blue_font th_blue_top width_fixed3">첨부파일</th>
+                                    <td colspan="1" class="td_gray th_blue_top left_align"><input type="file"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="table3-4">
+                            <div class="head_cell">변경 사유를 입력하여 주십시오.</div>
+                            <table>
+                                <tr>
+                                    <th class="th_blue_font th_blue_top width_fixed3">첨부파일</th>
+                                    <td class="td_gray th_blue_top left_align">
+                                        <select name="fileselect">
+                                            <option value="fileselect1" selected="selected">선택하여주십시오.</option>
+                                            <option value="fileselect2">#</option>
+                                            <option value="fileselect3">#</option>
+                                        </select></td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="3" class="th_blue_font width_fixed3">상세내역</td>
+                                    <td rowspan="3" class="td_gray">
+                                        <form action="">
+                                            <textarea class="td_txtarea" name="explain" id="" cols="116" rows="5"></textarea>
+                                        </form>
+                                        <span class="position_right_bottom">현재 0 / (한글 100자, 영문 200자 이내)</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
