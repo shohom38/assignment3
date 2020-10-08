@@ -78,6 +78,7 @@ body {
     border: 1px solid #6f98ab;
     background: linear-gradient(#3b6690, #6e8ead, #2a5987);
     box-shadow: 1px 1px 2px #1f4975;
+    cursor: pointer;
 }
 
 .nav_after {
@@ -362,10 +363,14 @@ th {
     right: -280px;
 }
 
+.btn_title_position {
+    display: flex;
+    justify-content: space-between;
+    width: 854px;
+}
+
 .btn_position {
     display: inline-block;
-    width: 737px;
-    text-align: right;
 }
 
 .save_btn {
@@ -376,7 +381,20 @@ th {
     color: #ffffff;
     background-color: #2e5d9c;
     box-shadow: 1px 1px 1px #c0c5cd;
+    cursor: pointer;
 }
+
+.small_btn {
+    font-size: 11px;
+    padding-left: 9px;
+    padding-right: 9px;
+    cursor: pointer;
+}
+
+.small_btn:not(:last-child) {
+    margin-right: 2px;
+}
+
 
 .table3-1, .table3-2 {
     margin-bottom: 17px;
