@@ -78,6 +78,7 @@ body {
     border: 1px solid #6f98ab;
     background: linear-gradient(#3b6690, #6e8ead, #2a5987);
     box-shadow: 1px 1px 2px #1f4975;
+    cursor: pointer;
 }
 
 .nav_after {
