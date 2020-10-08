@@ -362,10 +362,14 @@ th {
     right: -280px;
 }
 
+.btn_title_position {
+    display: flex;
+    justify-content: space-between;
+    width: 854px;
+}
+
 .btn_position {
     display: inline-block;
-    width: 737px;
-    text-align: right;
 }
 
 .save_btn {
@@ -376,7 +380,20 @@ th {
     color: #ffffff;
     background-color: #2e5d9c;
     box-shadow: 1px 1px 1px #c0c5cd;
+    cursor: pointer;
 }
+
+.small_btn {
+    font-size: 11px;
+    padding-left: 9px;
+    padding-right: 9px;
+    cursor: pointer;
+}
+
+.small_btn:not(:last-child) {
+    margin-right: 2px;
+}
+
 
 .table3-1, .table3-2 {
     margin-bottom: 17px;
