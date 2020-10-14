@@ -57,10 +57,15 @@ body {
     display: inline-block;
 }
 
+.rightside {
+    line-height: 49px;
+}
+
 .rightside_wrap {
+    width: 534px;
     z-index: 1;
-    background: linear-gradient(#3a6ea0, #336696, #295885);
-    text-align: right;
+    background: url('../assignment3/navbar_rightside.png') 0 0 no-repeat;
+    background-size: cover;
     padding-left: 12px;
     padding-right: 12px;
     font-size: 12px;
@@ -225,14 +230,16 @@ h3 {
 
 .contents_box_tap {
     display: inline-block;
+    margin-bottom: -1px;
     padding-top: 10px;
+    padding-bottom: 5px;
     padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 0 20px 0 0;
-    border-top: 1px double #cdcdcd;
-    border-left: 1px double #cdcdcd;
-    border-right: 1px double #cdcdcd;
-    background: #ffffff no-repeat;
+    padding-right: 40px;
+    border-radius: 0 18px 0 0;
+    border-top: 4px double #cdcdcd;
+    border-left: 4px double #cdcdcd;
+    border-right: 4px double #cdcdcd;
+    background: linear-gradient(#f0f0f0, #ffffff) no-repeat;
     z-index: 1;
 }
 
@@ -381,6 +388,11 @@ th {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.btn_postion_main {
+    display: flex;
+    justify-content: space-between;
 }
 
 .btn_position {
