@@ -47,9 +47,9 @@
             <div class="box_container">
                 <div class="contents_head"><h3>개인연구관리</h3></div>
                 <div class="constents_box">
-                    <div class="contents_box_tap"><span><strong>연구보조원변경</strong></span></div>
+                    <div class="contents_box_tap"><h4>연구보조원변경</h4></div>
                     <div class="contents_container">
-                        <div class="table3-1">
+                        <div class="table-og">
                             <table>
                                 <tr>
                                     <th class="th_blue">년도</th>
@@ -68,7 +68,7 @@
                             </table>
                         </div>
                         
-                        <div class="table3-2">
+                        <div class="table-og">
                             <div class="btn_title_position">
                                 <div class="head_cell">현재구성 공동연구원</div>
                                 <div class="btn_position">
@@ -119,7 +119,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="table3-2">
+                        <div class="table-og">
                             <div class="btn_title_position">
                                 <div class="head_cell">변경신청내역</div>
                             </div>
@@ -146,31 +146,31 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="table3-3">
+                        <div class="table-og">
                             <div class="head_cell">
                                 관련파일이 있는 경우 파일을 첨부시켜 주십시오.
                             </div>
                             <table>
                                 <tr>
-                                    <th class="th_blue_font th_blue_top width_fixed3">첨부파일</th>
-                                    <td colspan="1" class="td_gray th_blue_top left_align"><input type="file"></td>
+                                    <th class="th_blue_font th_blue_top width_fixed3"> <label for="file">첨부파일</label></th>
+                                    <td colspan="1" class="td_gray th_blue_top left_align"><input type="file" id="file"></td>
                                 </tr>
                             </table>
                         </div>
-                        <div class="table3-4">
+                        <div class="table-og">
                             <div class="head_cell">변경 사유를 입력하여 주십시오.</div>
                             <table class="last_table">
                                 <tr>
-                                    <th class="th_blue_font th_blue_top width_fixed3">첨부파일</th>
+                                    <th class="th_blue_font th_blue_top width_fixed3"><label for="selected">첨부파일</label></th>
                                     <td class="td_gray th_blue_top left_align">
-                                        <select name="fileselect">
+                                        <select id="selected" name="fileselect">
                                             <option value="fileselect1" selected="selected">선택하여주십시오.</option>
                                             <option value="fileselect2">#</option>
                                             <option value="fileselect3">#</option>
                                         </select></td>
                                 </tr>
                                 <tr>
-                                    <th rowspan="3" class="th_blue_font width_fixed3">상세내역</td>
+                                    <th rowspan="3" class="th_blue_font width_fixed3"><label for="value_detail">상세내역</label></td>
                                     <td rowspan="3" class="td_gray">
                                         <form action="">
                                             <textarea class="td_txtarea" name="explain" id="value_detail" cols="116" rows="5"></textarea>
