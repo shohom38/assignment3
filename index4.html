@@ -19,12 +19,15 @@
                 </div>
                 <div class="rightside">
                     <div class="rightside_wrap">
-                        <p><span>・ flawless 님</span>이 로그인 하셨습니다.</p>
-                        <ul class="nav_after">
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">NRF HOME</a></li>
-                        </ul>
-                        <button class="logout_button" type="button">로그아웃</button>
+                        <div class="row leftspace"></div>
+                        <div class="row middlespace">
+                            <p><span>・ flawlessfjjfjfjfjafjads 님</span>이 로그인 하셨습니다.</p>
+                            <ul class="nav_after">
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#">NRF HOME</a></li>
+                            </ul>
+                            <button class="logout_button" type="button">로그아웃</button>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -150,35 +153,37 @@
                             <div class="head_cell">
                                 관련파일이 있는 경우 파일을 첨부시켜 주십시오.
                             </div>
-                            <table>
-                                <tr>
-                                    <th class="th_blue_font th_blue_top width_fixed3">첨부파일</th>
-                                    <td colspan="1" class="td_gray th_blue_top left_align"><input type="file"></td>
-                                </tr>
-                            </table>
+                            <form action="">
+                                <table>
+                                    <tr>
+                                        <th class="th_blue_font th_blue_top width_fixed3">첨부파일</th>
+                                        <td colspan="1" class="td_gray th_blue_top left_align"><input type="file"></td>
+                                    </tr>
+                                </table>
+                            </form>
                         </div>
                         <div class="table-og">
                             <div class="head_cell">변경 사유를 입력하여 주십시오.</div>
-                            <table>
-                                <tr>
-                                    <th class="th_blue_font th_blue_top width_fixed3">첨부파일</th>
-                                    <td class="td_gray th_blue_top left_align">
-                                        <select name="fileselect">
-                                            <option value="fileselect1" selected="selected">선택하여주십시오.</option>
-                                            <option value="fileselect2">#</option>
-                                            <option value="fileselect3">#</option>
-                                        </select></td>
-                                </tr>
-                                <tr>
-                                    <th rowspan="3" class="th_blue_font width_fixed3">상세내역</td>
-                                    <td rowspan="3" class="td_gray">
-                                        <form action="">
+                            <form action="">
+                                <table>
+                                    <tr>
+                                        <th class="th_blue_font th_blue_top width_fixed3">첨부파일</th>
+                                        <td class="td_gray th_blue_top left_align">
+                                            <select name="fileselect">
+                                                <option value="fileselect1" selected="selected">선택하여주십시오.</option>
+                                                <option value="fileselect2">#</option>
+                                                <option value="fileselect3">#</option>
+                                            </select></td>
+                                    </tr>
+                                    <tr>
+                                        <th rowspan="3" class="th_blue_font width_fixed3">상세내역</td>
+                                        <td rowspan="3" class="td_gray">
                                             <textarea class="td_txtarea" name="explain" id="" cols="116" rows="5"></textarea>
-                                        </form>
-                                        <div class="position_right_bottom"><span>현재 0 / (한글 100자, 영문 200자 이내)</span></div>
-                                    </td>
-                                </tr>
-                            </table>
+                                            <div class="position_right_bottom"><span>현재 0 / (한글 100자, 영문 200자 이내)</span></div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </form>
                         </div>
                     </div>
                 </div>
