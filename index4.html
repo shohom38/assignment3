@@ -54,6 +54,13 @@
                     <div class="contents_container">
                         <div class="table-og">
                             <table>
+                                <colgroup>
+                                    <col width="8%">
+                                    <col width="25%">
+                                    <col width="8%">
+                                    <col width="9%">
+                                    <col width="50%">
+                                </colgroup>
                                 <thead>
                                     <tr>
                                         <th scope="col" class="th_blue">년도</th>
@@ -165,32 +172,40 @@
                             <div class="head_cell">
                                 관련파일이 있는 경우 파일을 첨부시켜 주십시오.
                             </div>
-                            <form action="">
+                            <form action="#">
                                 <table>
-                                    <tr>
-                                        <th scope="row" class="th_blue_font th_blue_top width_fixed3">첨부파일</th>
-                                        <td colspan="1" class="td_gray th_blue_top left_align"><input type="file"></td>
-                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" class="th_blue_font th_blue_top width_fixed3"><label for="uploadfile">첨부파일</label></th>
+                                            <td class="td_gray th_blue_top left_align filebox">
+                                                <input type="text" class="upload-name" value="" disabled="disabled">
+                                                <label for="file">파일찾기</label>
+                                                <input type="file" id="file" class="upload-hidden">
+                                            </td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                             </form>
                         </div>
                         <div class="table-og">
                             <div class="head_cell">변경 사유를 입력하여 주십시오.</div>
-                            <form action="">
+                            <form action="#">
                                 <table>
                                     <tr>
-                                        <th scope="rowgroup" class="th_blue_font th_blue_top width_fixed3">첨부파일</th>
+                                        <th scope="row" class="th_blue_font th_blue_top width_fixed3">
+                                            <label for="fileselect">첨부파일</label>
+                                        </th>
                                         <td class="td_gray th_blue_top left_align">
-                                            <select name="fileselect">
+                                            <select id="fileselect" name="fileselect">
                                                 <option value="fileselect1" selected="selected">선택하여주십시오.</option>
                                                 <option value="fileselect2">#</option>
                                                 <option value="fileselect3">#</option>
                                             </select></td>
                                     </tr>
                                     <tr>
-                                        <th scope="rowgroup" rowspan="3" class="th_blue_font width_fixed3">상세내역</td>
-                                        <td rowspan="3" class="td_gray">
-                                            <textarea class="td_txtarea" name="explain" id="" cols="116" rows="5"></textarea>
+                                        <th scope="row" class="th_blue_font width_fixed3"><label for="info">상세내역</label></td>
+                                        <td class="td_gray">
+                                            <textarea class="td_txtarea" name="explain" id="info" cols="116" rows="5"></textarea>
                                             <div class="position_right_bottom"><span>현재 0 / (한글 100자, 영문 200자 이내)</span></div>
                                         </td>
                                     </tr>
