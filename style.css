@@ -170,7 +170,7 @@ aside {
     margin-bottom: 3px;
     border-bottom: 1px solid #c1c1c1;
     background: url('../assignment3/img/list_marker.png') 0 0 no-repeat;
-    background-position: 14px -2px;
+    background-position: 14px 0;
 }
 
 .sidebar_list1>li:last-child {
@@ -181,9 +181,9 @@ aside {
 .sidebar_list1>li>a:hover {
     width: 100%;
     font-weight: bold;
-    margin-bottom: 3px;
+    /*margin-bottom: 3px;*/
     background: url('../assignment3/img/sidebar_marker2.png') 0 0 no-repeat;
-    background-position: 14px -2px;
+    background-position: 14px 0;
     background-color: #336595;
     color: #ffffff;
 }
