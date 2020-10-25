@@ -20,10 +20,8 @@ body {
 }
 
 .head_wrap {
-    display: inline-block;
-    width: 100%;
-    min-height: 45px;
-    line-height: 45px;
+    display: block;
+    height: 45px;
     background: linear-gradient(#264e8c, #24457a, #213a63);
     margin-bottom: 19px;
     text-align: right;
@@ -37,7 +35,10 @@ body {
 
 .leftside_wrap {
     padding-left: 46px;
-    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-right: 38px;
 }
 
 .leftside_wrap h1 a {
@@ -62,12 +63,12 @@ body {
 }
 
 .rightside_wrap {
-    min-width: 50%;
     z-index: 1;
-    background-size: cover;
     padding-left: 12px;
     font-size: 12px;
-    text-align: right;
+    position: relative;
+    background: url('../assignment3/img/leftspace.png') 0 0 no-repeat;
+    padding-left: 85px;
 }
 
 .rightside_wrap p {
@@ -123,34 +124,26 @@ body {
 }
 
 .middlespace {
-    background: url('../assignment3/otherspace.png') repeat-x;
+    background: url('../assignment3/img/otherspace.png') repeat-x;
     padding-right: 12px;
+    padding: 12px 12px 12px 0;
 }
 
-.leftspace {
-    width: 85px;
-    height: 45px;
-    vertical-align: middle;
-    margin-right: -4px;
-    background: url('../assignment3/leftspace.png') 0 0 no-repeat;
+.aside_contents_wrap {
+    padding: 0 16px;
 }
+
 
 aside {
-    display: inline-block;
     width: 210px;
     position: absolute;
-    top: 69px;
-    left: 0;
+    top: 63px;
+    left: 16px;
     background-color: #ededed;
-}
-
-.sidebar_wrap {
-    display: block;
-    margin: 0 auto;
-    height: 735px;
     font-size: 14px;
     padding-top: 16px;
-    border-top: 3px solid #366899;
+    padding-bottom: 216px;
+    background: url('../assignment3/img/aside-top-line.png') center top no-repeat;
 }
 
 .sidebar_list {
@@ -158,41 +151,47 @@ aside {
     width: 190px;
 }
 
-.sidebar_list li a {
+.sidebar_list>li>a {
     color: #000000;
     text-decoration: none;
     font-weight: normal;
 }
 
-.sidebar_list1 li a:hover {
+.sidebar_list1>li>a:hover {
     color: #ffffff;
 }
+
 
 .sidebar_list1 {
     list-style: none;
     margin-bottom: 8px;
 }
 
-.sidebar_list1 li a{
+.sidebar_list1>li>a{
     display: inline-block;
     width: 100%;
-    padding: 10px 33px;
+    padding: 7px 33px;
+    padding-left: 36px;
     margin-bottom: 3px;
     border-bottom: 1px solid #c1c1c1;
-    background: url('../assignment3/list_marker.png') 0 0 no-repeat;
-    background-position: 10px 2px;
+    background: url('../assignment3/img/list_marker.png') 0 0 no-repeat;
+    background-position: 14px -2px;
 }
 
-.sidebar_list1 li a:hover {
+.sidebar_list1>li:last-child {
+    margin-bottom: 10px;
+}
+
+
+.sidebar_list1>li>a:hover {
     width: 100%;
     font-weight: bold;
     margin-bottom: 3px;
-    background: url('../assignment3/sidebar_marker2.png') 0 0 no-repeat;
-    background-position: 10px 2px;
+    background: url('../assignment3/img/sidebar_marker2.png') 0 0 no-repeat;
+    background-position: 14px -2px;
     background-color: #336595;
     color: #ffffff;
 }
-
 
 .sidebar_list2 {
     list-style: none;
@@ -206,7 +205,7 @@ aside {
     display: inline-block;
     width: 100%;
     text-decoration: none;
-    padding: 7px 36px;
+    padding: 5px 36px;
     font-size: 12px;
     color: #000000;
 }
@@ -218,8 +217,16 @@ aside {
 
 .contents_head {
     margin-left: 15px;
-    border-radius: 3px 3px 0 0;
-    background: linear-gradient(#396d9f, #22496f);
+    background: url('../assignment3/img/topsection-left.png') left center no-repeat;
+
+}
+
+.middlespace-top-section {
+    background: url('../assignment3/img/topsection-middle.png') center center repeat-x;
+}
+
+.right-top-section {
+    background: url('../assignment3/img/topsection-right.png') right center no-repeat;
 }
 
 h3 {
@@ -248,20 +255,27 @@ h3 {
 
 .contents_box_tap {
     display: inline-block;
-    margin-bottom: -1px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    padding-left: 30px;
-    padding-right: 40px;
-    border-radius: 0 18px 0 0;
-    border-top: 4px double #cdcdcd;
-    border-left: 4px double #cdcdcd;
-    border-right: 4px double #cdcdcd;
-    background: linear-gradient(#f0f0f0, #ffffff) no-repeat;
+    margin-bottom: -3px;
+    background: url('../assignment3/img/tap-left.png') left center no-repeat;
+    padding-left: 14px;
     z-index: 1;
 }
 
+.tap-right {
+    background: url('../assignment3/img/tap-right.png') right center no-repeat;
+    padding-right: 36px;
+}
+
+
+.tap-middlespace {
+    background: url('../assignment3/img/tap-middle.png') center center repeat-x;
+}
+
 .contents_box_tap h4 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 20px;
     color: #fa6c03;
     font-size: 16px;
 }
@@ -271,6 +285,10 @@ h3 {
     border: 1px solid #cdcdcd;
     padding: 38px 12px;
     z-index: -1;
+}
+
+caption {
+    display: none;
 }
 
 table {
@@ -299,6 +317,10 @@ thead>tr>.head_cell {
     padding-right: 102px;
 }
 
+table {
+    border-top: 2px solid #36699b;
+}
+
 tr, th, td {
     text-align: center;
     font-size: 12px;
@@ -312,23 +334,36 @@ th {
 
 .head_cell {
     display: inline-block;
-    font-size: 12px;
-    border-radius: 5px 5px 0 0;
-    padding: 6px 22px;
     color: #ffffff;
-    background: url('../assignment3/marker3.png') 0 0 no-repeat;
-    background-position: -2px -1px;
-    background-color: #36699b;
+    margin-bottom: -2px;
 }
 
+h5 {
+    font-size: 12px;
+    font-weight: normal;
+}
 
 .leftside-title {
-    background: url('../assignment3/leftside-title.png') 0 0 no-repeat;
+    background: url('../assignment3/img/leftside-title.png') left center no-repeat;
+    padding-left: 14px;
 }
 
 .middlespace-title {
-    padding: 0 10px;
-    background: url('../assignment3/middlespace-title.png') 0 0 repeat-x;
+    padding: 6px 10px;
+    background: url('../assignment3/img/middlespace-title.png') center center repeat-x;
+}
+
+.rightside-title {
+    background: url('../assignment3/img/rightside-title.png') right center no-repeat;
+    padding-right: 14px;
+}
+
+.padding-right1 {
+    padding-right: 27px;
+}
+
+.padding-right2 {
+    padding-right: 86px;
 }
 
 .th_blue{
@@ -417,13 +452,14 @@ th {
 }
 
 .btn_postion_main {
-    display: flex;
-    justify-content: space-between;
+    display: block;
 }
 
 .btn_position {
     display: inline-block;
-    text-align: right;
+    position: absolute;
+    top: 270px;
+    right: 38px;
 }
 
 .save_btn {
@@ -479,7 +515,7 @@ th {
 }
 
 .upload-hidden {
-    visibility: hidden;
+    display: none;
 }
 
 .filebox label {
