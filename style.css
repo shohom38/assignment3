@@ -94,24 +94,19 @@ body {
 .nav_after {
     list-style: none;
     text-align: center;
+    background: url('../assignment3/img/bar-nrf.png') 56px center no-repeat;
 }
 
 .nav_after>li{
     display: inline-block;
+    padding-left: 12px;
+    padding-right: 12px;
 
 }
 
 .nav_after>li>a {
     color: #b9c4d6;
     text-decoration: none;
-}
-
-.nav_after li::after {
-    display: inline-block;
-    content: "|";
-    padding-left: 12px;
-    padding-right: 12px;
-    color: #7195b6;
 }
 
 
