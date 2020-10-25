@@ -42,9 +42,21 @@
                 </div>
             </aside>
             <div class="box_container">
-                <div class="contents_head"><h3>개인연구관리</h3></div>
+                <div class="contents_head">
+                    <div class="right-top-section">
+                        <div class="middlespace-top-section">
+                            <h3>개인연구관리</h3>
+                        </div>
+                    </div>
+                </div>
                 <div class="constents_box">
-                    <div class="contents_box_tap"><h4>연구기관변경</h4></div>
+                    <div class="contents_box_tap">
+                        <div class="tap-right">
+                            <div class="tap-middlespace">
+                                <h4>연구기관변경</h4>
+                            </div>
+                        </div>
+                    </div>
                     <div class="contents_container">
                         <div class="table-og">
                             <table>
@@ -88,6 +100,7 @@
                                 <div class="btn_position"><button class="save_btn">저장‣</button></div>
                             </div>
                             <table>
+                                <caption>차트</caption>
                                 <thead>
                                     <tr>
                                         <th class="th_blue_font th_blue_top">구분</th>
@@ -99,7 +112,11 @@
                                     <tr>
                                         <td class="td_gray">연구기관</td>
                                         <td colspan="3" class="td_gray left_align">연세대학교</td>
-                                        <td colspan="1" class="td_gray left_align"><input type="file"></td>
+                                        <td colspan="1" class="td_gray left_align filebox">                                        
+                                            <input type="text" class="upload-name" value="" disabled="disabled" style="width: 87%;" >
+                                            <label for="file">파일찾기</label>
+                                            <input type="file" id="file" class="upload-hidden">
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -113,6 +130,7 @@
                                 </div>
                             </div>
                             <table>
+                                <caption>차트</caption>
                                 <tr>
                                     <th scope="row" class="th_blue_font th_blue_top width_fixed3"><label for="file">첨부파일</label></th>
                                     <td class="td_gray th_blue_top left_align filebox">
@@ -132,11 +150,12 @@
                                 </div>
                             </div>
                             <table>
+                                <caption>차트</caption>
                                 <form action="#">
                                     <tr>
-                                        <th scope="row" class="th_blue_font th_blue_top width_fixed3">첨부파일</th>
+                                        <th scope="row" class="th_blue_font th_blue_top width_fixed3"><label for="fileselect">첨부파일</label></th>
                                         <td class="td_gray th_blue_top left_align">
-                                            <select name="fileselect">
+                                            <select id="fileselect" name="fileselect">
                                                 <option value="fileselect1" selected="selected">선택하여주십시오.</option>
                                                 <option value="fileselect2">#</option>
                                                 <option value="fileselect3">#</option>
@@ -144,10 +163,10 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th scope="row" class="th_blue_font width_fixed3">상세내역</td>
+                                        <th scope="row" class="th_blue_font width_fixed3"><label for="textarea">상세내역</label></td>
                                         <td class="td_gray">
-                                            <textarea class="td_txtarea" name="explain" id="" cols="116" rows="5"></textarea>
-                                            <span class="position_right_bottom">현재 0 / (한글 100자, 영문 200자 이내)</span>
+                                            <textarea class="td_txtarea" name="explain" id="textarea" cols="116" rows="5"></textarea>
+                                            <div class="position_right_bottom"><span>현재 0 / (한글 100자, 영문 200자 이내)</span></div>
                                         </td>
                                     </tr>
                                 </form>

@@ -129,16 +129,21 @@ body {
     padding: 12px 12px 12px 0;
 }
 
+.aside_contents_wrap {
+    padding: 0 16px;
+}
+
 
 aside {
     width: 210px;
     position: absolute;
     top: 63px;
-    left: 0;
+    left: 16px;
     background-color: #ededed;
     font-size: 14px;
     padding-top: 16px;
-    border-top: 3px solid #366899;
+    padding-bottom: 216px;
+    background: url('../assignment3/img/aside-top-line.png') center top no-repeat;
 }
 
 .sidebar_list {
@@ -165,11 +170,12 @@ aside {
 .sidebar_list1>li>a{
     display: inline-block;
     width: 100%;
-    padding: 10px 33px;
+    padding: 7px 33px;
+    padding-left: 36px;
     margin-bottom: 3px;
     border-bottom: 1px solid #c1c1c1;
     background: url('../assignment3/img/list_marker.png') 0 0 no-repeat;
-    background-position: 10px 2px;
+    background-position: 14px -2px;
 }
 
 .sidebar_list1>li:last-child {
@@ -182,7 +188,7 @@ aside {
     font-weight: bold;
     margin-bottom: 3px;
     background: url('../assignment3/img/sidebar_marker2.png') 0 0 no-repeat;
-    background-position: 10px 2px;
+    background-position: 14px -2px;
     background-color: #336595;
     color: #ffffff;
 }
@@ -199,7 +205,7 @@ aside {
     display: inline-block;
     width: 100%;
     text-decoration: none;
-    padding: 10px 36px;
+    padding: 5px 36px;
     font-size: 12px;
     color: #000000;
 }
@@ -211,8 +217,16 @@ aside {
 
 .contents_head {
     margin-left: 15px;
-    border-radius: 3px 3px 0 0;
-    background: linear-gradient(#396d9f, #22496f);
+    background: url('../assignment3/img/topsection-left.png') left center no-repeat;
+
+}
+
+.middlespace-top-section {
+    background: url('../assignment3/img/topsection-middle.png') center center repeat-x;
+}
+
+.right-top-section {
+    background: url('../assignment3/img/topsection-right.png') right center no-repeat;
 }
 
 h3 {
@@ -241,20 +255,27 @@ h3 {
 
 .contents_box_tap {
     display: inline-block;
-    margin-bottom: -1px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    padding-left: 30px;
-    padding-right: 40px;
-    border-radius: 0 18px 0 0;
-    border-top: 4px double #cdcdcd;
-    border-left: 4px double #cdcdcd;
-    border-right: 4px double #cdcdcd;
-    background: linear-gradient(#f0f0f0, #ffffff) no-repeat;
+    margin-bottom: -3px;
+    background: url('../assignment3/img/tap-left.png') left center no-repeat;
+    padding-left: 14px;
     z-index: 1;
 }
 
+.tap-right {
+    background: url('../assignment3/img/tap-right.png') right center no-repeat;
+    padding-right: 36px;
+}
+
+
+.tap-middlespace {
+    background: url('../assignment3/img/tap-middle.png') center center repeat-x;
+}
+
 .contents_box_tap h4 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 20px;
     color: #fa6c03;
     font-size: 16px;
 }
@@ -431,13 +452,14 @@ h5 {
 }
 
 .btn_postion_main {
-    display: flex;
-    justify-content: space-between;
+    display: block;
 }
 
 .btn_position {
     display: inline-block;
-    text-align: right;
+    position: absolute;
+    top: 270px;
+    right: 38px;
 }
 
 .save_btn {
@@ -493,7 +515,7 @@ h5 {
 }
 
 .upload-hidden {
-    visibility: hidden;
+    display: none;
 }
 
 .filebox label {
