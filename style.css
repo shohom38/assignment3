@@ -236,7 +236,7 @@ h3 {
 .constents_box {
     width: 100%;
     height: 100%;
-    padding: 22px 9px;
+    padding: 22px 0 0 0;
     background: #ededed no-repeat;
 }
 
@@ -249,22 +249,26 @@ h3 {
 
 }
 
-.contents_box_tap {
-    display: inline-block;
-    margin-bottom: -3px;
+.contents_box_title {
+    margin-bottom: -6px;
     background: url('../assignment3/img/tap-left.png') left center no-repeat;
-    padding-left: 14px;
+    padding: 11px 0 10px 14px;
+    font-size: 16px;
+    position: relative;
+    color: #fa6c03;
     z-index: 1;
+    white-space: nowrap;
 }
 
 .tap-right {
     background: url('../assignment3/img/tap-right.png') right center no-repeat;
-    padding-right: 36px;
+    padding: 10px 33px 10px 0;
 }
 
 
 .tap-middlespace {
     background: url('../assignment3/img/tap-middle.png') center center repeat-x;
+    padding: 9px 4px 9px 15px;
 }
 
 .contents_box_tap h4 {
