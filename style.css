@@ -11,6 +11,7 @@ html, body {
 
 body {
     background: linear-gradient(#d9d9d9, #ffffff) no-repeat;
+    min-width: 1070px;
 }
 
 .wrap {
@@ -19,7 +20,7 @@ body {
     margin: 0 auto;
 }
 
-.head_wrap {
+.head-wrap {
     display: block;
     height: 45px;
     min-width: 700px;
@@ -30,11 +31,11 @@ body {
 
 
 
-.leftside_wrap, .leftside_wrap h1, .leftside_wrap h2 {
+.leftside-wrap, .leftside-wrap h1, .leftside-wrap h2 {
     display: inline-block;
 }
 
-.leftside_wrap {
+.leftside-wrap {
     padding-left: 46px;
     position: absolute;
     top: 0;
@@ -42,20 +43,20 @@ body {
     padding-right: 38px;
 }
 
-.leftside_wrap h1 a {
+.leftside-wrap h1 a {
     font-size: 16px;
     padding-right: 12px;
     text-decoration: none;
     color: #ffffff;
 }
 
-.leftside_wrap h2 a{
+.leftside-wrap h2 a{
     font-size: 12px;
     color: #b9c4d6;
     text-decoration: none;
 }
 
-.rightside_wrap, .rightside_wrap p, .nav_after {
+.rightside-wrap, .rightside-wrap p, .nav-after {
     display: inline-block;
 }
 
@@ -63,7 +64,7 @@ body {
     line-height: 45px;
 }
 
-.rightside_wrap {
+.rightside-wrap {
     z-index: 1;
     padding-left: 12px;
     font-size: 12px;
@@ -72,17 +73,17 @@ body {
     padding-left: 85px;
 }
 
-.rightside_wrap p {
+.rightside-wrap p {
     color: #b9c4d6;
     padding-right: 26px;
 }
 
-.rightside_wrap p span {
+.rightside-wrap p span {
     font-weight: bold;
     color: #ffffff;
 }
 
-.logout_button{
+.logout-button{
     font-size: 10px;
     color: #ffffff;
     padding: 4px 9px;
@@ -92,26 +93,26 @@ body {
     cursor: pointer;
 }
 
-.nav_after {
+.nav-after {
     list-style: none;
     text-align: center;
     background: url('../assignment3/img/bar-nrf.png') 56px center no-repeat;
 }
 
-.nav_after>li{
+.nav-after>li{
     display: inline-block;
     padding-left: 12px;
     padding-right: 12px;
 
 }
 
-.nav_after>li>a {
+.nav-after>li>a {
     color: #b9c4d6;
     text-decoration: none;
 }
 
 
-.nav_after li:last-child::after {
+.nav-after li:last-child::after {
     content: "";
 }
 
@@ -125,7 +126,7 @@ body {
     padding: 12px 12px 12px 0;
 }
 
-.aside_contents_wrap {
+.aside-contents-wrap {
     padding: 0 16px;
 }
 
@@ -142,28 +143,28 @@ aside {
     background: url('../assignment3/img/aside-top-line.png') center top no-repeat;
 }
 
-.sidebar_list {
+.sidebar-list {
     margin: 0 auto;
     width: 190px;
 }
 
-.sidebar_list>li>a {
+.sidebar-list>li>a {
     color: #000000;
     text-decoration: none;
     font-weight: normal;
 }
 
-.sidebar_list1>li>a:hover {
+.sidebar-list1>li>a:hover {
     color: #ffffff;
 }
 
 
-.sidebar_list1 {
+.sidebar-list1 {
     list-style: none;
     margin-bottom: 8px;
 }
 
-.sidebar_list1>li>a{
+.sidebar-list1>li>a{
     display: inline-block;
     width: 100%;
     padding: 7px 33px;
@@ -174,12 +175,12 @@ aside {
     background-position: 14px 0;
 }
 
-.sidebar_list1>li:last-child {
+.sidebar-list1>li:last-child {
     margin-bottom: 10px;
 }
 
 
-.sidebar_list1>li>a:hover {
+.sidebar-list1>li>a:hover {
     width: 100%;
     font-weight: bold;
     margin-bottom: 3px;
@@ -189,15 +190,15 @@ aside {
     color: #ffffff;
 }
 
-.sidebar_list2 {
+.sidebar-list2 {
     list-style: none;
 }
 
-.sidebar_list2 li {
+.sidebar-list2 li {
     border-bottom: 1px dotted #c1c1c1;
 }
 
-.sidebar_list2 li a {
+.sidebar-list2 li a {
     display: inline-block;
     width: 100%;
     text-decoration: none;
@@ -206,41 +207,42 @@ aside {
     color: #000000;
 }
 
-#list_selected {
+#list-selected {
     color: #336595;
     font-weight: bolder;
 }
 
-.contents_head {
+#contents-head {
     margin-left: 15px;
     background: url('../assignment3/img/topsection-left.png') left center no-repeat;
 
 }
 
 .middlespace-top-section {
+    display: block;
+    padding: 9px 0;
     background: url('../assignment3/img/topsection-middle.png') center center repeat-x;
 }
 
 .right-top-section {
     background: url('../assignment3/img/topsection-right.png') right center no-repeat;
+
 }
 
 h3 {
     font-size: 16px;
-    padding-top: 9px;
-    padding-bottom: 9px;
     padding-left: 28px;
     color: #ffffff;
 }
 
-.constents_box {
+.constents-box {
     width: 100%;
     height: 100%;
     padding: 22px 0 0 0;
     background: #ededed no-repeat;
 }
 
-.box_container {
+.box-container {
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -249,7 +251,7 @@ h3 {
 
 }
 
-.contents_box_title {
+.contents-box-title {
     margin-bottom: -6px;
     background: url('../assignment3/img/tap-left.png') left center no-repeat;
     padding: 11px 0 10px 14px;
@@ -271,7 +273,7 @@ h3 {
     padding: 9px 4px 9px 15px;
 }
 
-.contents_box_tap h4 {
+.contents-box-tap h4 {
     padding-top: 10px;
     padding-bottom: 5px;
     padding-left: 15px;
@@ -280,7 +282,7 @@ h3 {
     font-size: 16px;
 }
 
-.contents_container {
+.contents-container {
     background: #ffffff no-repeat;
     border: 1px solid #cdcdcd;
     padding: 38px 12px;
@@ -296,7 +298,7 @@ table {
     min-width: 100%;
 }
 
-thead>tr>.head_cell {
+thead>tr>.head-cell {
     border-radius: 2px;
 }
 
@@ -308,17 +310,18 @@ thead>tr>.head_cell {
     margin-bottom: 60px;
 }
 
-.left_align {
+.left-align {
     text-align: left;
 }
 
-.width_cell {
+.width-cell {
     padding-left: 102px;
     padding-right: 102px;
 }
 
 table {
     border-top: 2px solid #36699b;
+    white-space: nowrap;
 }
 
 tr, th, td {
@@ -332,7 +335,7 @@ th {
     font-weight: 500;
 }
 
-.head_cell {
+.head-cell {
     display: inline-block;
     color: #ffffff;
     margin-bottom: -2px;
@@ -345,7 +348,7 @@ h5 {
 
 .leftside-title {
     background: url('../assignment3/img/leftside-title.png') left center no-repeat;
-    padding-left: 14px;
+    padding: 4px 0 4px 14px;
 }
 
 .middlespace-title {
@@ -355,7 +358,7 @@ h5 {
 
 .rightside-title {
     background: url('../assignment3/img/rightside-title.png') right center no-repeat;
-    padding-right: 14px;
+    padding: 5px 13px 4px 0;
 }
 
 .padding-right1 {
@@ -366,103 +369,103 @@ h5 {
     padding-right: 86px;
 }
 
-.th_blue{
+.th-blue{
     color: #ffffff;
     background-color: #36699b;
 }
 
-.th_blue_font {
+.th-blue-font {
     color: #65839d;
     background-color: #e7e9ed;
 }
 
-.th_blue_top {
+.th-blue-top {
     border-top: 2px solid #36699b;
 }
 
-.td_gray {
+.td-gray {
     background-color: #f3f3f3;
 }
 
-.td_cool_gray {
+.td-cool-gray {
     background-color: #e7e9ed;
 }
 
-.bold_span {
+.bold-span {
     font-weight: 600;
     color: #65839d;
 }
 
-.bold_a {
+.bold-a {
     font-weight: 600;
     color: #65839d;
     text-decoration: none;
 }
 
-.strong_cell {
+.strong-cell {
     color: #36699b;
 }
 
-.list_container {
+.list-container {
     padding: 13px;
     font-size: 12px;
 }
 
-.list_container ul {
+.list-container ul {
     list-style: square;
     list-style-position: inside;
 }
 
-.list_container ul li span {
+.list-container ul li span {
     font-weight: 600;
 }
 
-.width_fixed1 {
+.width-fixed1 {
     padding-left: 150px;
     padding-right: 150px;
 }
 
-.width_fixed2 {
+.width-fixed2 {
     padding-left: 169px;
     padding-right: 169px;
 }
 
-.width_fixed3 {
+.width-fixed3 {
     width: 95px;
 }
 
-.td_txtarea {
+.td-txtarea {
     resize: none;
     width: 100%;
 }
 
-.td_txtarea:focus {
+.td-txtarea:focus {
     outline: none;
 }
 
-.position_right_bottom {
+.position-right-bottom {
     font-size: 11px;
     text-align: right;
 }
 
-.btn_title_position {
+.btn-title-position {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.btn_postion_main {
+.btn-postion-main {
     display: block;
 }
 
-.btn_position {
+.btn-position {
     display: inline-block;
     position: absolute;
-    top: 286px;
+    top: 271px;
     right: 38px;
 }
 
-.save_btn {
+.save-btn {
     font-size: 12px;
     padding-right: 11px;
     padding-left: 11px;
@@ -473,7 +476,7 @@ h5 {
     cursor: pointer;
 }
 
-.put_in_btn {
+.put-in-btn {
     font-size: 12px;
     padding-right: 8px;
     padding-left: 16px;
@@ -484,20 +487,20 @@ h5 {
     cursor: pointer;
 }
 
-.btn_center_position {
+.btn-center-position {
     display: inline-block;
     width: 100%;
     text-align: center;
 }
 
-.small_btn {
+.small-btn {
     font-size: 11px;
     padding-left: 9px;
     padding-right: 9px;
     cursor: pointer;
 }
 
-.small_btn:not(:last-child) {
+.small-btn:not(:last-child) {
     margin-right: 2px;
 }
 
@@ -510,7 +513,7 @@ h5 {
     margin-bottom: 40px;
 }
 
-.last_table {
+.last-table {
     margin-bottom: 7px;
 }
 
